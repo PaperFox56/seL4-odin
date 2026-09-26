@@ -1,9 +1,5 @@
 package seL4
 
-
-// TODO: Make this an actual flag
-CONFIG_KERNEL_MCS :: false
- 
 Uint8 :: u8
 
 Int32 :: i32
@@ -38,7 +34,6 @@ UntypedDesc :: struct {
 }
 
 
-}
 BootInfo :: BootInfoMCS when CONFIG_KERNEL_MCS else struct {
 	extraLen                : Word,
 	nodeID                  : NodeId,
